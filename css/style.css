@@ -1,0 +1,218 @@
+/* Reset básico */
+
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", Arial, sans-serif;
+}
+
+/* Estilos da página */
+body {
+  background-color: #1e2a30;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #1e2a30;
+  color: #fff;
+  font-size: 24px;
+}
+
+.menu-icon {
+  width: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+}
+
+.menu-icon .bar {
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+/* Estilos do main e dos inputs */
+main {
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.input-container {
+  position: relative;
+  margin: 10px 0;
+}
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #707070; /* Cor do ícone */
+  font-size: 18px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 10px 10px 35px; /* Espaço extra à esquerda para o ícone */
+  border: none;
+  border-radius: 20px;
+  background-color: #e6e6e6;
+  color: #333;
+  font-size: 16px;
+  outline: none;
+}
+/* Estilos da seção de informações da estação */
+.station-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.station-title {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.station-icon {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.station-circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #9b59b6; /* Cor lilás */
+  margin-right: 10px;
+}
+
+.station-name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.station-name-container {
+  display: flex;
+  align-items: center;
+  background-color: #3a3a3a;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.next-train {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ccc;
+  background-color: #3a3a3a;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Estilos do mapa do trem */
+.train-map {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.train-line {
+  position: relative;
+  width: 90%;
+  height: 40px;
+  background-color: #e6e6e6;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.train-stations {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  position: relative;
+}
+.station-dot {
+  width: 25px;
+  height: 25px;
+  background-color: #c5c5c5; /* Cor das estações */
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.station-dot.active {
+  background-color: #9b59b6; /* Cor roxa para estações ativas */
+  box-shadow: inset 0 0 0 4px #fff;
+}
+
+.station-dot.location {
+  background-color: #29cf55; /* Cor de preenchimento (verde claro) */
+  box-shadow: inset 0 0 0 4px #fff; /* Borda interna de 3px de cor branca */
+}
+/* Estilos da capacidade dos vagões */
+.wagon-capacity {
+  background-color: #e6e6e6;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.wagon-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Cores dos vagões */
+.green {
+  background-color: #a8d5a6;
+}
+
+.yellow {
+  background-color: #ffd966;
+}
+
+.orange {
+  background-color: #ffa07a;
+}
+
+.red {
+  background-color: #ff6347;
+}
+
+/* Outros estilos dos vagões */
+.wagon {
+  width: 100px;
+  height: 40px;
+  color: #333;
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+}
