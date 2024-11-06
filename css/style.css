@@ -63,7 +63,7 @@ header {
 
 .nav.active {
   border: solid 1px #fff;
-  border-radius: 0.4rem;
+  border-radius: 0.5rem;
   display: block;
   padding: 20px 0px;
   position: fixed;
@@ -71,7 +71,7 @@ header {
   z-index: 10;
   width: 80vw;
   height: 70vh;
-  top: 40%; /* Centraliza verticalmente */
+  top: 50%; /* Centraliza verticalmente */
   left: 50%; /* Centraliza horizontalmente */
   transform: translate(
     -50%,
