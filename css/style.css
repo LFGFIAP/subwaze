@@ -138,6 +138,21 @@ main {
   font-size: 16px;
   outline: none;
 }
+
+.btn {
+  cursor: pointer;
+  width: 100%;
+  padding: 10px 0px;
+  border: none;
+  border-radius: 20px;
+  background-color: #03a9f4;
+  color: #fff;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #014c6e;
+}
 /* Estilos da seção de informações da estação */
 .station-info {
   display: flex;
@@ -246,7 +261,7 @@ main {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 300px;
+  max-width: 250px;
 }
 
 /* Cores dos vagões */
