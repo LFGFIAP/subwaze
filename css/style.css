@@ -90,6 +90,10 @@ header {
   color: #ffffff; /* Pode ajustar a cor como preferir */
 }
 
+.hidden {
+  display: none !important; /* Garante que o elemento não seja exibido */
+}
+
 @media (min-width: 720px) {
   .menu-mobile {
     display: none;
