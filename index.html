@@ -40,9 +40,9 @@
         <input type="text" placeholder="Para onde você vai?" class="input" />
       </div>
 
-      <button class="btn">Buscar</button>
+      <button class="btn" id="btn-buscar">Buscar</button>
 
-      <section class="station-info">
+      <section class="station-info hidden" id="station-info">
         <div class="station-title">
           <span class="station-icon">🌐</span>
           <span>Estação atual:</span>
@@ -54,7 +54,7 @@
         <div class="next-train">Próximo trem em: 03:17</div>
       </section>
 
-      <div class="train-map">
+      <div class="train-map hidden" id="train-map">
         <div class="train-line">
           <div class="train-stations">
             <span class="station-dot"></span>
@@ -69,7 +69,7 @@
         </div>
       </div>
 
-      <section class="vagao-capacity">
+      <section class="vagao-capacity hidden" id="vagao-capacity">
         <div class="vagao-row">
           <div class="vagao green">Vagão 1</div>
           <div class="vagao yellow">Vagão 2</div>
