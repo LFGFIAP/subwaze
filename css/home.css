@@ -1,5 +1,3 @@
-/* Reset básico */
-
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap");
 
 * {
@@ -18,32 +16,6 @@ body {
   font-family: "Sora", Arial, sans-serif;
 }
 
-/* Estilos adicionais para a página de login */
-.login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.login-box {
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 12px;
-  width: 100%;
-  max-width: 600px;
-  text-align: center;
-}
-
-.login-title {
-  color: #1e2a30;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-/* Estilos da página home */
-
-/* Header */
 header {
   width: 100%;
   display: flex;
@@ -59,15 +31,15 @@ header {
 }
 
 .menu-item {
-  text-decoration: none; /* Remove o sublinhado dos links */
-  color: #fff; /* Ajuste a cor conforme necessário */
+  text-decoration: none;
+  color: #fff;
   font-size: 16px;
   cursor: pointer;
   padding: 20px;
 }
 
 .menu {
-  list-style: none; /* Remove os marcadores de lista */
+  list-style: none;
 }
 .menu-mobile {
   width: 30px;
@@ -95,12 +67,9 @@ header {
   z-index: 10;
   width: 80vw;
   height: 70vh;
-  top: 50%; /* Centraliza verticalmente */
-  left: 50%; /* Centraliza horizontalmente */
-  transform: translate(
-    -50%,
-    -50%
-  ); /* Corrige a posição para realmente estar ao centro */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .menu-close {
   position: absolute;
@@ -111,35 +80,15 @@ header {
   cursor: pointer;
   background: none;
   border: none;
-  color: #ffffff; /* Pode ajustar a cor como preferir */
+  color: #ffffff;
 }
 
 .hidden {
-  display: none !important; /* Garante que o elemento não seja exibido */
+  display: none !important;
 }
 
-@media (min-width: 720px) {
-  .menu-mobile {
-    display: none;
-  }
-
-  .nav {
-    display: block; /* Certifique-se de que o menu seja exibido no desktop */
-  }
-
-  .menu {
-    display: flex; /* Alinha os itens do menu horizontalmente */
-  }
-
-  .menu-close {
-    display: none;
-  }
-}
-
-/* Estilos do main e dos inputs */
 main {
   width: 90%;
-  max-width: 400px;
   text-align: center;
 }
 
@@ -152,13 +101,13 @@ main {
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
-  color: #707070; /* Cor do ícone */
+  color: #707070;
   font-size: 18px;
 }
 
 .input {
   width: 100%;
-  padding: 10px 10px 10px 35px; /* Espaço extra à esquerda para o ícone */
+  padding: 10px 10px 10px 35px;
   border: none;
   border-radius: 20px;
   background-color: #e6e6e6;
@@ -182,12 +131,13 @@ main {
   background-color: #03a9f4;
   color: #fff;
   font-size: 16px;
+  margin-top: 10px;
 }
 
 .btn:hover {
   background-color: #014c6e;
 }
-/* Estilos da seção de informações da estação */
+
 .station-info {
   display: flex;
   flex-direction: column;
@@ -239,7 +189,6 @@ main {
   border-radius: 5px;
 }
 
-/* Estilos do mapa do trem */
 .train-map {
   display: flex;
   justify-content: center;
@@ -266,39 +215,33 @@ main {
 .station-dot {
   width: 25px;
   height: 25px;
-  background-color: #c5c5c5; /* Cor das estações */
+  background-color: #c5c5c5;
   border-radius: 50%;
   display: inline-block;
 }
 
 .station-dot.active {
-  background-color: #9b59b6; /* Cor roxa para estações ativas */
+  background-color: #9b59b6;
   box-shadow: inset 0 0 0 4px #fff;
 }
 
 .station-dot.location {
-  background-color: #29cf55; /* Cor de preenchimento (verde claro) */
-  box-shadow: inset 0 0 0 4px #fff; /* Borda interna de 3px de cor branca */
+  background-color: #29cf55;
+  box-shadow: inset 0 0 0 4px #fff;
 }
-/* Estilos da capacidade dos vagões */
+
 .vagao-capacity {
+  margin: auto auto;
   background-color: #e6e6e6;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 0.5rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 10px;
   align-items: center;
 }
 
-.vagao-row {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 250px;
-}
-
-/* Cores dos vagões */
 .green {
   background-color: #a8d5a6;
 }
@@ -315,14 +258,93 @@ main {
   background-color: #ff6347;
 }
 
-/* Outros estilos dos vagões */
 .vagao {
   width: 100px;
   height: 40px;
   color: #333;
   font-weight: bold;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   text-align: center;
   line-height: 40px;
   font-size: 16px;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.vagao.highlight {
+  border: 2px solid #00ff00; /* Pode ser modificado para outro destaque */
+  background-color: #d4fcb8; /* Apenas um exemplo para destacar */
+  animation: blink 1s infinite; /* Define a animação */
+}
+
+.etapas-container {
+  color: #03a9f4;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.etapa-imagem {
+  max-width: 100%;
+  max-height: 300px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+@media (min-width: 365px) {
+  main {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 600px) {
+  .menu-mobile {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .menu-close {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 992px) {
+  main {
+    max-width: 800px;
+  }
+
+  .btn {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    max-width: 1000px;
+  }
 }

@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e2a30;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Sora", Arial, sans-serif;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.login-title {
+  color: #1e2a30;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+main {
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.input-container {
+  position: relative;
+  margin: 10px 0;
+}
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #707070;
+  font-size: 18px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  border: none;
+  border-radius: 20px;
+  background-color: #e6e6e6;
+  color: #333;
+  font-size: 16px;
+  outline: none;
+}
+
+.load-message {
+  justify-content: center;
+  display: flex;
+  padding: 50px 50px;
+}
+
+.btn {
+  cursor: pointer;
+  width: 100%;
+  padding: 10px 0px;
+  border: none;
+  border-radius: 20px;
+  background-color: #03a9f4;
+  color: #fff;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #014c6e;
+}
