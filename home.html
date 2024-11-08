@@ -4,8 +4,8 @@
     <link rel="icon" href="/img/logo-ccr.png" type="image/x-icon" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Subwaze</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <title>Subwaze - Home</title>
+    <link rel="stylesheet" href="/css/home.css" />
   </head>
   <body>
     <header>
@@ -20,7 +20,7 @@
         <div id="menu-close" class="menu-close">X</div>
         <ul class="menu">
           <li><a href="" class="menu-item">Home</a></li>
-          <li><a href="" class="menu-item">Nosso Time</a></li>
+          <li><a href="equipe.html" class="menu-item">Nosso Time</a></li>
           <li><a href="index.html" class="menu-item">Sair</a></li>
         </ul>
       </nav>
@@ -43,6 +43,18 @@
       <button class="btn" id="btn-buscar">Buscar</button>
 
       <span id="status-msg" class="load-message hidden"></span>
+
+      <section class="etapas-container hidden" id="etapas-container">
+        <h3>Etapas para o Vagão Mais Vazio:</h3>
+        <p id="etapa-atual"></p>
+        <img
+          id="etapa-imagem"
+          src=""
+          alt="Imagem da etapa"
+          class="etapa-imagem"
+        />
+        <button id="proxima-etapa" class="btn">Próxima Etapa</button>
+      </section>
 
       <section class="station-info hidden" id="station-info">
         <div class="station-title">
@@ -72,18 +84,12 @@
       </div>
 
       <section class="vagao-capacity hidden" id="vagao-capacity">
-        <div class="vagao-row">
-          <div class="vagao green">Vagão 1</div>
-          <div class="vagao yellow">Vagão 2</div>
-        </div>
-        <div class="vagao-row">
-          <div class="vagao orange">Vagão 3</div>
-          <div class="vagao red">Vagão 4</div>
-        </div>
-        <div class="vagao-row">
-          <div class="vagao yellow">Vagão 5</div>
-          <div class="vagao green">Vagão 1</div>
-        </div>
+        <div class="vagao green">Vagão 1</div>
+        <div class="vagao yellow">Vagão 2</div>
+        <div class="vagao orange">Vagão 3</div>
+        <div class="vagao red">Vagão 4</div>
+        <div class="vagao yellow">Vagão 5</div>
+        <div class="vagao green">Vagão 6</div>
       </section>
     </main>
 
